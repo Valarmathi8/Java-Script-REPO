@@ -4,20 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        function task1(){
-            var a="Hello JavaScript";
-            alert(a);
-        }
-        function promp(){
-            var b ="Welcome To KGISL";
-            prompt(b);
-            alert(b);
-        }
-        promp();
-    </script>
 </head>
 <body>
-    <button onclick="task1()">Click</button>
+    <script>
+        var details=['{"firstname":"Valar","lastname":"Mathi","dob":"08-07-2002"}'];
+        var result=JSON.parse(details);
+        document.write(result.firstname+result.lastname+" "+result.dob);
+    </script>
 </body>
 </html>
