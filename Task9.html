@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function overr(){
+            var a=Number(document.getElementById("txt").value);
+            for(i=0;i<=a;i++){
+                document.getElementById("s1").innerHTML+="<option>"+i+"</option>";
+            }
+        }
+        function test(){
+            var b=Number(document.getElementById("s1").value);
+            for(i=0;i<=b;i++){
+                document.getElementById("s2").innerHTML+="<option>"+i+"</option>";
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter a Value : <input type="text" id="txt" onkeyup="overr()">
+    <select name="" id="s1" onclick="test()"></select>
+    <select name="" id="s2"></select>
+</body>
+</html>

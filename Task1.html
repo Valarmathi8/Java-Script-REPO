@@ -1,18 +1,23 @@
 <!DOCTYPE html>
- <html><head>
-<meta charset=utf-8 />
-<title>JS DOM paragraph style</title>
-<script>
-    function js_style(){
-        document.getElementById("text").style.fontStyle="italic";
-        document.getElementById("text").style.color="blue";
-    }
-</script>
- </head>
- <body>
- <p id ="text">JavaScript is a scripting language used to develop web pages. Developed in Netscape, JS allows developers to create a dynamic and interactive web page to interact with visitors and execute complex actions. It also enables users to load content into a document without reloading the entire page.</p>
- <div>
-<button id="jsstyle" onclick="js_style()">Style</button>
- </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function task1(){
+            var a="Hello JavaScript";
+            alert(a);
+        }
+        function promp(){
+            var b ="Welcome To KGISL";
+            prompt(b);
+            alert(b);
+        }
+        promp();
+    </script>
+</head>
+<body>
+    <button onclick="task1()">Click</button>
 </body>
- </html>
+</html>

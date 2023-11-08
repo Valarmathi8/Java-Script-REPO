@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function values(){
+            var a=document.getElementById("no1").value;
+            var b=document.getElementById("no2").value;
+            if(a==""){
+                alert("One of the data is empty,so kindly fill it and try again")
+            }
+            else if(b==""){
+                alert("One of the data is empty,so kindly fill it and try again")
+            }
+            else
+            alert("Values Filled")
+        }
+    </script>
 </head>
 <body>
-    <script>
-        var a=[1,2,4]
-        a.push(100)
-        alert(a)
-    </script>
+    NO 1 : <input type="text" id="no1">
+    NO 2 : <input type="text" id="no2">
+    <button onclick="values()">Click</button>
 </body>
 </html>

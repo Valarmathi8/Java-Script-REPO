@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function demo(){
+            var a=new Date( document.getElementById("data1").value)
+            a.setDate(a.getDate() - 5);
+
+            var b=new Date( document.getElementById("data1").value) 
+            b.setDate(b.getDate() + 5);
+            document.getElementById("task").innerHTML+="Date +5 days: "+`<input type=date value=${b.toISOString().split('T')[0]}>`+"<br>"
+            document.getElementById("task").innerHTML+="Date -5 days: "+`<input type=date value=${a.toISOString().split('T')[0]}>`
+
+        }
+    </script>
+</head>
+<body>
+    <label for="">Enter the date: </label>
+    <input type="date" name="" id="data1">
+    <button onclick="demo()">Click</button>
+    <div id="task"></div>   
+</body>
+</html>

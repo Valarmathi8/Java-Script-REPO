@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function text1(){
+            var a=Number(document.getElementById("t1").value);
+            for(i=0;i<=a;i++){
+                document.getElementById("s1").innerHTML+="<option>"+i+"</option>"
+            }
+        }
+        function slt1(){
+            var x=Number(document.getElementById("s1").value);
+            let y=prompt("Enter Username");
+            alert(y);
+            let z=prompt("Enter Password");
+            alert(z);
+        }
+    </script>
+</head>
+<body>
+   Enter a Value : <input type="text" id="t1" onclick="text1()">
+   <select name="" id="s1" onclick="slt1()"></select> 
+</body>
+</html>

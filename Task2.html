@@ -4,39 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        function btnoff(){
-            document.getElementById("off").style.backgroundColor="red";
-            document.getElementById("on").style.backgroundColor="grey";
-            let bulbimage1=document.getElementById("bulb");
-            bulbimage1.src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png";
-            let catimage1=document.getElementById("cat");
-            catimage1.src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png";
-        }
-        function btnon(){
-            document.getElementById("on").style.backgroundColor="green";
-            document.getElementById("off").style.backgroundColor="grey";
-            let bulbimage2=document.getElementById("bulb");
-            bulbimage2.src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png";
-            let catimage2=document.getElementById("cat");
-            catimage2.src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png";
-            
-        }
-    </script>
 </head>
 <body>
-        <div style="background-color: black;text-align: center;">
-    <div class="image1">
-        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png" alt="" id="bulb" height="120px" width="120px">
-    </div>
-    <div class="image2">
-        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png" alt="" id="cat" height="120px" width="120px">
-    </div>
-    <div class="image3" style="background-color: grey; width: 100px; color: white; border-radius: 8px;margin-left: 340px;">
-        <h4>Switches</h4>
-        <button id="off" onclick="btnoff()">OFF</button>
-        <button id="on" onclick="btnon()">ON</button>
-    </div>
-</div>
+   <script>
+    var a;
+    var a=prompt("Enter the day");
+    switch(a){
+        case "sunday":
+            alert(a+" is holiday")
+            break;
+            case "monday":
+            alert(a+" is Working day")
+            break;
+            case "tueday":
+            alert(a+" is Working day")
+            break;
+            case "wednesday":
+            alert(a+" is Working day")
+            break;
+            case "thursday":
+            alert(a+" is Working day")
+            break;
+            case "friday":
+            alert(a+" is Working day")
+            break;
+            default:
+                alert("Invalid day")
+
+    }
+   </script> 
 </body>
 </html>

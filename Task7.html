@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btn(){
+            var num=parseInt(document.getElementById("txt").value);
+            var selet=document.getElementById("slt");
+            var opt=document.createElement("option");
+            opt.textContent=num;
+            selet.appendChild(opt);
+        }
+    </script>
+</head>
+<body>
+    Enter Value: <input type="text" id="txt">
+    <button onclick="btn()">Add</button>
+    <select name="" id="slt">
+        <option value="">Collection</option>
+    </select>
+</body>
+</html>

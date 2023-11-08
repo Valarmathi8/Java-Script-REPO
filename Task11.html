@@ -6,11 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="perform()">Click</button>
+    Password : <input type="text" id="p1">
     <script>
-        function perform(){
-            alert("Welcome to JavaScript");
-        }
+        var name=prompt("Enter Your Name");
+        var DOB=prompt("Enter Your DOB");
+        var set1=name.slice(0,4)+DOB;
+        document.getElementById("p1").value=set1;
     </script>
 </body>
 </html>
