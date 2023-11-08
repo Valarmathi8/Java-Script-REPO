@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function item1(){
+           var cartitemtextinput=document.getElementById("txt1").value;
+           var listt=document.createElement("li");
+           var nod=document.createTextNode(cartitemtextinput);
+           listt.appendChild(nod);
+           document.body.appendChild(listt);
+        }
+    </script>
+</head>
+<body>
+    <h1>Add To Cart</h1>
+    <input  id="txt1" type="text"><button   style="background-color: blue; border-radius: 5px;"    id="addbtn" onclick="item1()">Add</button>
+    <p>My Cart items</p>
+</body>
+</html>

@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        function currentday(c){
-            today=new Date();
-            var dd=today.getDate();
-            var mm=today.getMonth()+1;
-            var yyyy=today.getFullYear();
-            if(dd<10)dd='0'+dd;
-            if(mm<10)mm='0'+mm;
-            return(mm+c+dd+c+yyyy);
-        }
-        document.write(currentday('-')+"<br>");
-        document.write(currentday('*'))
-    </script>
+ <html><head>
+<meta charset=utf-8 />
+<title>JS DOM paragraph style</title>
+<script>
+    function js_style(){
+        document.getElementById("text").style.fontStyle="italic";
+        document.getElementById("text").style.color="blue";
+    }
+</script>
+ </head>
+ <body>
+ <p id ="text">JavaScript is a scripting language used to develop web pages. Developed in Netscape, JS allows developers to create a dynamic and interactive web page to interact with visitors and execute complex actions. It also enables users to load content into a document without reloading the entire page.</p>
+ <div>
+<button id="jsstyle" onclick="js_style()">Style</button>
+ </div>
 </body>
-</html>
+ </html>

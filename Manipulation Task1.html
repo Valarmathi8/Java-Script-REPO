@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function demo()
+        {
+            var newdiv=document.createElement("newdiv");
+            var text=document.createElement("h3")
+            var h3=document.createTextNode("Login Page");
+            var inputbox=document.createElement("input");
+            var btn1=document.createElement("button");
+            var btntext1=document.createTextNode("Click");
+            btn1.appendChild(btntext1);
+            text.appendChild(h3)
+            newdiv.appendChild(text);
+            newdiv.appendChild(inputbox);
+            newdiv.appendChild(btn1);
+            document.body.appendChild(newdiv);
+
+        }       
+    </script>
+</head>
+<body>
+    <button onclick="demo()">click</button>    
+</body>
+</html>
