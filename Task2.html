@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function validatename(){
+var a=document.getElementById("intake").value;
+var regex=/^[a-z0-9_]+$/;
+if(regex.test(a)){
+    alert("Strong Password");
+}
+else{
+    alert("Weak Password");
+}
+        }
+    </script>
 </head>
 <body>
-    <script>
-        function decimals(a,b){
-	return a.toFixed(b);
-	}
-console.log(decimals(2.100212, 2));
-console.log(decimals(2.100212, 3));
-console.log(decimals(2100, 2));
-    </script>
+    Password : <input type="password" id="intake">
+    <input type="button" value="OK" onclick="validatename()" >
 </body>
 </html>

@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function validatename(){
+var a=document.getElementById("intake").value;
+var regex=/^[a-zA-Z]+$/;
+if(regex.test(a)){
+    alert("Valid Username");
+    // return true;
+}
+else{
+    alert("Invalid Username");
+    // return false;
+}
+        }
+    </script>
 </head>
 <body>
-    val 1: <h4 id="math1"></h4>
-    val 2: <h4 id="math2"></h4>
-    val 3: <h4 id="math3"></h4>
-    val 4: <h4 id="math4"></h4>
-    <script>
-        document.getElementById("math1").innerHTML=Math.random(20,1);
-        document.getElementById("math2").innerHTML=Math.random(1,10);
-        document.getElementById("math3").innerHTML=Math.random(6);
-        document.getElementById("math4").innerHTML=Math.random();
-    </script>
+    Enter your Name : <input type="text" id="intake">
+    <input type="button" value="OK" onclick="validatename()" >
 </body>
 </html>

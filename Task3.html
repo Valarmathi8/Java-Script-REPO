@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function validatenum(){
+var a=document.getElementById("intake").value;
+var regex=/^\d{10}$/;
+if((regex.test(a))){
+    alert("Valid Mobile Number");
+}
+else{
+    alert("Invalid Mobile Number");
+}
+        }
+    </script>
 </head>
 <body>
-    maximum value 1 : <p id="maxval"></p>
-    maximum value 2 : <p id="maxval2"></p>
-    <script>
-        document.getElementById("maxval").innerHTML=Math.max(12,34,56,1);
-        document.getElementById("maxval2").innerHTML=Math.max(-12,-34,0,-56,-1);
-    </script>
+    Mobile Number : <input type="tel" id="intake">
+    <input type="button" value="OK" onclick="validatenum()" >
 </body>
 </html>
