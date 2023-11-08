@@ -6,22 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="p1"></div>
-      <script>
-        double1=(result)=>{
-            document.getElementById("p1").innerHTML+=result;
+    <script>
+        function mname(m){
+            month=[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            return month[m.getMonth()];
         }
-        one=(str,d1)=>{
-            var r1=str.split("").map(b=>b+b).join("");
-             d1(r1)
-        }
-        two=(str,d1)=>{
-            var r2=str.split("").map(a=>a+a).join("");
-            d1(r2)
-        }
-        one('Adrian',double1);
-
-        two('ssssnake',double1);
-      </script>    
+        document.write(mname(new Date("10/11/2009"))+"<br>");
+        document.write(mname(new Date("11/13/2014")));
+    </script>
 </body>
 </html>
