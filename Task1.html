@@ -6,10 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="task1"></p>
+    val 1: <h4 id="math1"></h4>
+    val 2: <h4 id="math2"></h4>
+    val 3: <h4 id="math3"></h4>
+    val 4: <h4 id="math4"></h4>
     <script>
-        localStorage.setItem("Course","Full Stack Development");
-        document.getElementById("task1").innerHTML=localStorage.getItem("Course");
+        document.getElementById("math1").innerHTML=Math.random(20,1);
+        document.getElementById("math2").innerHTML=Math.random(1,10);
+        document.getElementById("math3").innerHTML=Math.random(6);
+        document.getElementById("math4").innerHTML=Math.random();
     </script>
 </body>
 </html>

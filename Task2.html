@@ -6,32 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-   <script>
-    var a;
-    var a=prompt("Enter the day");
-    switch(a){
-        case "sunday":
-            alert(a+" is holiday")
-            break;
-            case "monday":
-            alert(a+" is Working day")
-            break;
-            case "tueday":
-            alert(a+" is Working day")
-            break;
-            case "wednesday":
-            alert(a+" is Working day")
-            break;
-            case "thursday":
-            alert(a+" is Working day")
-            break;
-            case "friday":
-            alert(a+" is Working day")
-            break;
-            default:
-                alert("Invalid day")
-
-    }
-   </script> 
+    <script>
+        function decimals(a,b){
+	return a.toFixed(b);
+	}
+console.log(decimals(2.100212, 2));
+console.log(decimals(2.100212, 3));
+console.log(decimals(2100, 2));
+    </script>
 </body>
 </html>

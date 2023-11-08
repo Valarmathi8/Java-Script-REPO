@@ -6,11 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="perform()">Click</button>
+    maximum value 1 : <p id="maxval"></p>
+    maximum value 2 : <p id="maxval2"></p>
     <script>
-        function perform(){
-            alert("Welcome to JavaScript");
-        }
+        document.getElementById("maxval").innerHTML=Math.max(12,34,56,1);
+        document.getElementById("maxval2").innerHTML=Math.max(-12,-34,0,-56,-1);
     </script>
 </body>
 </html>

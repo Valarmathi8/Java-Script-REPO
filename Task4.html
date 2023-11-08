@@ -2,19 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=cale=1.0">
     <title>Document</title>
 </head>
 <body>
+    minimum value 1 : <p id="minval"></p>
+    minimum value 2 : <p id="minval2"></p>
     <script>
-        let data1=prompt("Enter First Value");
-        let data2=prompt("Enter Second Value");
-        if(data1==data2){
-            alert("Data's are equal")
-        }
-        else{
-            alert("Data's are not equal")
-        }
+        document.getElementById("minval").innerHTML=Math.min(12,34,56,1);
+        document.getElementById("minval2").innerHTML=Math.min(-12,-34,0,-56,-1);
     </script>
 </body>
 </html>
