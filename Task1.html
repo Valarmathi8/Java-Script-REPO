@@ -6,9 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="store"></div>
     <script>
-        var a=['Orange', 25, 100, true, 33.58 ]
-        alert(a)
-    </script>
-</body>
-</html>
+        function demo(output){
+            document.getElementById("store").innerHTML+=output;
+        }
+        function odd(a,b){
+            if(a%2!=0){
+                output=true;
+            }
+            else{
+                output=false;
+            }b(output)
+        } 
+        odd(5,demo);
+        odd(6,demo);

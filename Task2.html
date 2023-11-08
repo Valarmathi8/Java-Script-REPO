@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        multiply=()=>{
-            var a=Number(document.getElementById("values").value);
-            alert(a*2);
-        }
-    </script>
 </head>
 <body>
-   Enter Num : <input type="text" id="values">
-   <input type="button" onclick="multiply()" value="Click">
+    <p id="p1"></p>
+    <script>
+       exclaim=(result)=>{
+        document.getElementById("p1").innerHTML+=result;
+       }
+       one=(a,exclaim)=>{
+        var d=a+"!";
+        exclaim(d)
+       }
+       two=(c,exclaim)=>{
+        var v=c+"!!";
+        exclaim(v)
+       }
+       one("Adrian",exclaim)
+       two("Adrian",exclaim)
+
+    </script>
 </body>
 </html>

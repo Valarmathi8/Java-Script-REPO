@@ -6,15 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="btn()">click</button>
-    <p  id="val"></p>
-    <script>
-        btn=()=>{
-             let a=parseInt(prompt("VALUE1:"));
-             let b=parseInt(prompt("VALUE2:"));
-            document.getElementById("val").innerHTML="ADD:"+(a+b)+"<br>"+"SUB:"+(a-b)+"<br>"+"MUL:"+(a*b)+"<br>"+"div:"+(a/b);
-    }
-        
-    </script>
+    <div id="p1"></div>
+      <script>
+        double1=(result)=>{
+            document.getElementById("p1").innerHTML+=result;
+        }
+        one=(str,d1)=>{
+            var r1=str.split("").map(b=>b+b).join("");
+             d1(r1)
+        }
+        two=(str,d1)=>{
+            var r2=str.split("").map(a=>a+a).join("");
+            d1(r2)
+        }
+        one('Adrian',double1);
+
+        two('ssssnake',double1);
+      </script>    
 </body>
 </html>
