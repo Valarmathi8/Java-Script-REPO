@@ -4,23 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        function validatename(){
-var a=document.getElementById("intake").value;
-var regex=/^[a-zA-Z]+$/;
-if(regex.test(a)){
-    alert("Valid Username");
-    // return true;
-}
-else{
-    alert("Invalid Username");
-    // return false;
-}
-        }
-    </script>
 </head>
 <body>
-    Enter your Name : <input type="text" id="intake">
-    <input type="button" value="OK" onclick="validatename()" >
+    <script>
+        var a="Chitra devi";
+        document.write(a.split(" "));
+    </script>
 </body>
 </html>

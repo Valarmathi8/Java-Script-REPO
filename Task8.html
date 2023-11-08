@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        function tx(){
-            var num=Number(document.getElementById("text").value);
-            for(i=0;i<=num;i++){
-                document.getElementById("slt").innerHTML+="<option>"+i+"</option>";
-            }
-        }
-    </script>
 </head>
 <body>
-    Enter Value: <input type="text" id="txt" onkeyup="tx()">
-    <select id="slt"></select>
+    <script>
+        let txt="js string exercises";
+        document.write(txt.toLocaleUpperCase());
+    </script>
 </body>
 </html>
