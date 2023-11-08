@@ -6,11 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="btn()">click</button>
+    <p  id="val"></p>
     <script>
-        var a=[25, 50, "center", 75, 100]
-        a.shift(25)
-        a.unshift(5)
-        alert(a)
+        btn=()=>{
+             let a=parseInt(prompt("VALUE1:"));
+             let b=parseInt(prompt("VALUE2:"));
+            document.getElementById("val").innerHTML="ADD:"+(a+b)+"<br>"+"SUB:"+(a-b)+"<br>"+"MUL:"+(a*b)+"<br>"+"div:"+(a/b);
+    }
+        
     </script>
 </body>
 </html>
