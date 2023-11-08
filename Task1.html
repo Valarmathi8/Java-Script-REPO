@@ -6,10 +6,10 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="task1"></p>
     <script>
-        var details=['{"firstname":"Valar","lastname":"Mathi","dob":"08-07-2002"}'];
-        var result=JSON.parse(details);
-        document.write(result.firstname+result.lastname+" "+result.dob);
+        localStorage.setItem("Course","Full Stack Development");
+        document.getElementById("task1").innerHTML=localStorage.getItem("Course");
     </script>
 </body>
 </html>
